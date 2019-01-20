@@ -1,0 +1,114 @@
+body {
+	font-weight: 900;
+	font-family: 'roboto', sans-serif;
+	padding: 0;
+	margin: 0;
+	background: #1C2238;
+}
+
+#header {
+	height: 150px;
+	margin: 0 auto;
+	background-color: #465C8A;
+	margin-bottom: 30px;
+}
+
+#body {
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: #1C2238;
+	height: 520px;
+	width: 1000px;
+}
+
+#body > div > div > p {
+	font-size: 48px;
+	font-weight: bold;
+	position: absolute;
+	width: 90px;
+	margin: 0 auto;
+	line-height: 90px;
+}
+
+#lingoTitle {
+	line-height: 150px;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-size: 70px;
+}
+
+.buttonContainer {
+	text-align: center;
+}
+
+
+#startButton, #quitButton {
+  outline: 0;
+  border: none;
+  position: relative;
+  top: 40px;
+  font-size: 1.75em;
+  color: #fff;
+  margin: 0 auto;
+  background: transparent;
+  color: #000;
+  font-weight: 900;
+  font-family: "roboto", sans-serif;
+  text-transform: uppercase;
+  width: 250px;
+  padding: 18px 0;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#startButton:hover:after, #quitButton:hover:after {
+  background-color: #eeea4c;
+}
+
+#startButton span, #quitButton span {
+  position: relative;
+  z-index: 100;
+   background-color: #f0ed63;
+}
+
+#startButton:after, #quitButton:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  transition: background-color .3s ease-in-out;
+  box-shadow: 0 4px 12px -4px rgba(0,0,0,.5);
+  animation: jelly 6s ease-in-out infinite;
+  transform-origin: 50% 50% 20px;
+  background-color: #f0ed63;
+}
+
+@keyframes jelly {
+  0% {
+    transform: perspective( 180px) rotateY( 5deg);
+  }
+  
+  50% {
+    transform: perspective( 180px) rotateY( -5deg);
+  }
+  
+  100% {
+    transform: perspective( 180px) rotateY( 5deg);
+  }
+}
+
+#header div button span{
+	color: black;
+}
+
+footer {
+  text-align: center;
+  background-color: #f0ed63;
+  height: 30px;
+  line-height: 30px;
+}
